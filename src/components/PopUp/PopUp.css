@@ -1,0 +1,6 @@
+.Popup {
+  position: fixed;
+  top: 60px;
+  right: 25px;
+  z-index: 999;
+}

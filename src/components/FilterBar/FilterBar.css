@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+.filterNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #0f191c;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  position: sticky;
+  top: 56px;
+  z-index: 900;
+}
+.filterNav h2 {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin: auto 0;
+}
+
+.filterNav select {
+  width: 20%;
+  padding: 7px 25px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+}
+
+.filterNav input {
+  width: 20%;
+  padding: 7px 25px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+}
+.filterNav button {
+  width: 10%;
+  padding: 7px;
+  border-radius: 25px;
+  background-color: white;
+  color: #0f191c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.filterNav button:hover {
+  background-color: #0f191c;
+  color: white;
+}
