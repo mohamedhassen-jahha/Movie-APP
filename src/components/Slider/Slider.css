@@ -8,12 +8,12 @@
 
 .SliderMain-Text {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.3rem;
 }

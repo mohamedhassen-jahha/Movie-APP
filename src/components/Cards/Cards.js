@@ -22,5 +22,4 @@ function Cards({ Data, searchByName, searchByRate }) {
     </div>
   );
 }
-
 export default Cards;
