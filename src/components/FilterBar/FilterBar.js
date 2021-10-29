@@ -1,19 +1,28 @@
-import React, { Component } from "react";
+import ReactStars from "react-stars";
+import React from "react";
 import "./FilterBar.css";
 
-export default class FilterBar extends Component {
-  render() {
-    return (
-      <div className="filterNav">
-        <h2>Filter Your Films </h2>
-        <select>
-          <option value="1">Choose By .. </option>
-          <option value="1">Title</option>
-          <option value="1">Ratting</option>
-        </select>
-        <input type="text" placeholder="Your choice to filter" />
-        <button>Filter Films</button>
-      </div>
-    );
-  }
+function FilterBar(props) {
+  return (
+    <div className="filterNav">
+      <h2>Filter Your Films </h2>
+
+      <ReactStars
+        count={5}
+        onChange={(e) => props.setSearchByRate(e * 2)}
+        size={38}
+        activeColor="#ffd700"
+        value={props.searchByRate}
+      />
+
+      <input
+        type="text"
+        className="FilterText"
+        placeholder="Your choice to filter"
+        onChange={(e) => props.setSearchByName(e.target.value)}
+      />
+    </div>
+  );
 }
+
+export default FilterBar;

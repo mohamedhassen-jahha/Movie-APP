@@ -17,16 +17,22 @@ export default class NavBar extends Component {
         className="Navig"
       >
         <Container>
-          <Navbar.Brand href="#">IBEM MOVIE </Navbar.Brand>
+          <Navbar.Brand href="#" className="Navlogo">
+            IMDb
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#movies">Movies</Nav.Link>
+              <Nav.Link href="#">Learn more</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#">Learn more</Nav.Link>
-              <Nav.Link eventKey={2} onClick={this.showAdd}>
+              <Nav.Link
+                className="movieAdd"
+                eventKey={2}
+                onClick={this.showAdd}
+              >
                 ADD A MOVIE
               </Nav.Link>
             </Nav>

@@ -1,6 +1,7 @@
 .Cardsmain {
   display: flex;
+  margin: 0 40px;
   padding: 10px 20px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CardComp.css";
+import ReactStars from "react-stars";
 
 export default class CardComp extends Component {
   render() {
@@ -20,9 +21,15 @@ export default class CardComp extends Component {
             {`Name:  ${this.props.Title}`}
             <br />
             {`Year:  ${this.props.year}`}
-            <br />
-            {`Rating:  ${this.props.rating}`}
           </Card.Title>
+          <ReactStars
+            className="StarsChange"
+            count={5}
+            size={30}
+            edit={false}
+            activeColor="#ffd700"
+            value={this.props.rating / 2}
+          />
         </Card.Body>
       </Card>
     );

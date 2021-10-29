@@ -4,3 +4,14 @@
   left: 0;
   z-index: 9999;
 }
+.Navlogo {
+  background-color: #e9bb17;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 900;
+  color: black !important;
+}
+
+.movieAdd {
+  color: white;
+}

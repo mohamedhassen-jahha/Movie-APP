@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px 50px;
+  padding: 8px 55px;
   background-color: #0f191c;
   color: white;
   text-transform: uppercase;
@@ -20,14 +20,6 @@
   margin: auto 0;
 }
 
-.filterNav select {
-  width: 20%;
-  padding: 7px 25px;
-  border-radius: 25px;
-  background-color: transparent;
-  color: white;
-}
-
 .filterNav input {
   width: 20%;
   padding: 7px 25px;
@@ -35,16 +27,8 @@
   background-color: transparent;
   color: white;
 }
-.filterNav button {
-  width: 10%;
-  padding: 7px;
-  border-radius: 25px;
-  background-color: white;
-  color: #0f191c;
+
+.ilterText {
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
-}
-.filterNav button:hover {
-  background-color: #0f191c;
-  color: white;
 }

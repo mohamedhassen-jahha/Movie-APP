@@ -3,10 +3,14 @@ import CardComp from "./Card/CardComp";
 
 import "./Cards.css";
 
-function Cards({ Data }) {
+function Cards({ Data, searchByName, searchByRate }) {
   return (
     <div className="Cardsmain">
-      {Data.map((el) => (
+      {Data.filter(
+        (el) =>
+          el.title.toLowerCase().includes(searchByName.toLowerCase()) &&
+          el.rating < searchByRate
+      ).map((el) => (
         <CardComp
           key={el.id}
           img={el.image.url}

@@ -1,3 +1,9 @@
 .Card {
   margin: 20px !important;
+  position: relative;
+}
+.StarsChange {
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
 }

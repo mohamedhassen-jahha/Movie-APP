@@ -4,9 +4,6 @@ import { Col, Row, Toast } from "react-bootstrap";
 import "./PopUp.css";
 
 function PopUp({ setPopUp, PopsUp, PopsUpValue }) {
-  // const [show, setShow] = useState(true);
-  console.log(setPopUp);
-  console.log(PopsUp);
   return (
     <Row className="Popup">
       <Col md={12}>

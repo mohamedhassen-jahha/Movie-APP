@@ -15,13 +15,13 @@ function App() {
   const [Data, setData] = useState(data);
   const [PopsUp, setPopUp] = useState(false);
   const [PopsUpValue, setPopUpValue] = useState("Woohoo, You've added a movie");
+  const [searchByName, setSearchByName] = useState("");
+  const [searchByRate, setSearchByRate] = useState(10);
 
   const addMovie = (myMovie) => {
     setData([...Data, myMovie]);
   };
 
-  console.log(isAddMovieShowing);
-  console.log(...Data);
   return (
     <div className="App">
       <PopUp PopsUp={PopsUp} setPopUp={setPopUp} PopsUpValue={PopsUpValue} />
@@ -40,9 +40,17 @@ function App() {
         />
       ) : null}
       <Slider />
-      <FilterBar />
+      <FilterBar
+        setSearchByName={setSearchByName}
+        setSearchByRate={setSearchByRate}
+        searchByRate={searchByRate}
+      />
       <h1 className="App-Title"> YOUR BEST MOVIES</h1>
-      <Cards Data={Data} />
+      <Cards
+        Data={Data}
+        searchByName={searchByName}
+        searchByRate={searchByRate}
+      />
     </div>
   );
 }
