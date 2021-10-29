@@ -1,6 +1,6 @@
 # MOVIE APP PROJECT
 
-This is my first React project this far.
+This is my first React project this big so far.
 
 ## Objective:
 
