@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Form, Row, Col, Button, Modal } from "react-bootstrap";
 import "./AddMenu.css";
+import { v4 as uuidv4 } from "uuid";
 
 export default class AddMenu extends Component {
   state = {
@@ -31,7 +32,7 @@ export default class AddMenu extends Component {
   submitMovie = (e) => {
     e.preventDefault();
     const newMovie = {
-      id: Math.random(),
+      id: uuidv4(),
       title: this.state.title,
       year: this.state.year,
       rating: this.state.rating,
