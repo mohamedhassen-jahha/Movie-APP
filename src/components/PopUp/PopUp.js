@@ -17,7 +17,7 @@ function PopUp({ setPopUp, PopsUp, PopsUpValue }) {
             <img
               src="holder.js/20x20?text=%20"
               className="rounded me-2"
-              alt=""
+              alt="img"
             />
             <strong className="me-auto">Notification</strong>
           </Toast.Header>

@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Form, Row, Col, Button, Modal } from "react-bootstrap";
+import { Form, Row, Col, Modal } from "react-bootstrap";
 import "./AddMenu.css";
 import { v4 as uuidv4 } from "uuid";
+import { Link } from "react-router-dom";
 
 export default class AddMenu extends Component {
   state = {
@@ -30,7 +31,6 @@ export default class AddMenu extends Component {
   };
 
   submitMovie = (e) => {
-    e.preventDefault();
     const newMovie = {
       id: uuidv4(),
       title: this.state.title,
@@ -56,7 +56,7 @@ export default class AddMenu extends Component {
     return (
       <div className="ModalStyle">
         <Modal.Dialog>
-          <Modal.Header closeButton onClick={this.closeModal}>
+          <Modal.Header>
             <Modal.Title>ADDING A MOVIE</Modal.Title>
           </Modal.Header>
 
@@ -109,15 +109,24 @@ export default class AddMenu extends Component {
           </Modal.Body>
 
           <Modal.Footer>
-            <Button
-              className="Modalbtn"
-              variant="primary"
+            <Link
+              className="ModalbtnClose"
+              exact
+              to="/movies"
               onClick={(e) => {
                 this.submitMovie(e);
               }}
             >
-              ADD MOVIE
-            </Button>
+              Add
+            </Link>
+            <Link
+              className="ModalbtnClose"
+              exact
+              to="/movies"
+              onClick={this.closeModal}
+            >
+              Close
+            </Link>
           </Modal.Footer>
         </Modal.Dialog>
       </div>

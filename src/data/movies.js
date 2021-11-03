@@ -8,10 +8,10 @@ export const Data = {
   query: "game",
   results: [
     {
-      id: "/title/tt0119174/",
+      id: "tt0119174/",
       image: {
         height: 1654,
-        id: "/title/tt0119174/images/rm4203875072",
+        id: "tt0119174/images/rm4203875072",
         url: "https:m.media-amazon.com/images/M/MV5BZGVmMDNmYmEtNGQ2Mi00Y2ZhLThhZTYtYjE5YmQzMjZiZGMxXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_.jpg",
         width: 1169,
       },
@@ -63,15 +63,15 @@ export const Data = {
     },
 
     {
-      id: "/title/tt0944947/",
+      id: "tt0944947/",
       image: {
         height: 1500,
-        id: "/title/tt0944947/images/rm4204167425",
+        id: "tt0944947/images/rm4204167425",
         url: "https:m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
         width: 1102,
       },
       runningTimeInMinutes: 57,
-      nextEpisode: "/title/tt1480055/",
+      nextEpisode: "tt1480055/",
       numberOfEpisodes: 73,
       seriesEndYear: 2019,
       seriesStartYear: 2011,
@@ -129,10 +129,10 @@ export const Data = {
     },
     {
       disambiguation: "I",
-      id: "/title/tt2704998/",
+      id: "tt2704998/",
       image: {
         height: 2048,
-        id: "/title/tt2704998/images/rm3186446592",
+        id: "tt2704998/images/rm3186446592",
         url: "https:m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@._V1_.jpg",
         width: 1382,
       },
@@ -174,10 +174,10 @@ export const Data = {
       ],
     },
     {
-      id: "/title/tt0245712/",
+      id: "tt0245712/",
       image: {
         height: 1535,
-        id: "/title/tt0245712/images/rm881890817",
+        id: "tt0245712/images/rm881890817",
         url: "https:m.media-amazon.com/images/M/MV5BMjQxMWJhMzMtMzllZi00NzMwLTllYjktNTcwZmU4ZmU3NTA0XkEyXkFqcGdeQXVyMTAzMDM4MjM0._V1_.jpg",
         width: 1150,
       },
@@ -224,10 +224,10 @@ export const Data = {
       ],
     },
     {
-      id: "/title/tt3322364/",
+      id: "tt3322364/",
       image: {
         height: 2048,
-        id: "/title/tt3322364/images/rm2330387200",
+        id: "tt3322364/images/rm2330387200",
         url: "https:m.media-amazon.com/images/M/MV5BMTYwNjgwNDg0NV5BMl5BanBnXkFtZTgwMzY1MjAyNzE@._V1_.jpg",
         width: 1383,
       },
@@ -285,10 +285,10 @@ export const Data = {
       ],
     },
     {
-      id: "/title/tt1545660/",
+      id: "tt1545660/",
       image: {
         height: 2048,
-        id: "/title/tt1545660/images/rm2295977472",
+        id: "tt1545660/images/rm2295977472",
         url: "https:m.media-amazon.com/images/M/MV5BMTQ3ODEwMzY3NV5BMl5BanBnXkFtZTgwNTkwMTQ5MDE@._V1_.jpg",
         width: 1382,
       },
@@ -329,15 +329,15 @@ export const Data = {
       ],
     },
     {
-      id: "/title/tt10919420/",
+      id: "tt10919420/",
       image: {
         height: 2048,
-        id: "/title/tt10919420/images/rm2766402049",
+        id: "tt10919420/images/rm2766402049",
         url: "https:m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
         width: 1382,
       },
       runningTimeInMinutes: 60,
-      nextEpisode: "/title/tt11979940/",
+      nextEpisode: "tt11979940/",
       numberOfEpisodes: 9,
       seriesEndYear: 2021,
       seriesStartYear: 2021,
@@ -383,15 +383,15 @@ export const Data = {
     },
 
     {
-      id: "/title/tt12940504/",
+      id: "tt12940504/",
       image: {
         height: 2222,
-        id: "/title/tt12940504/images/rm4083479297",
+        id: "tt12940504/images/rm4083479297",
         url: "https:m.media-amazon.com/images/M/MV5BNTQwMGU3OGQtMjdjYS00ZTg0LWE1NDItNGI0NjJiNmM0MTUyXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
         width: 1500,
       },
       runningTimeInMinutes: 50,
-      nextEpisode: "/title/tt13148458/",
+      nextEpisode: "tt13148458/",
       numberOfEpisodes: 8,
       seriesStartYear: 2021,
       title: "My Name",

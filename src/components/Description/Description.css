@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+.Modal-style {
+  min-width: 90vw !important;
+}
+.Modal-style-body {
+  max-height: 65vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modal {
+  top: auto !important;
+}
+
+.modal-img {
+  position: relative;
+  height: 400px;
+  margin-right: 20px;
+}
+.Modal-style-core {
+  width: 50%;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+#modal-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.modal-backdrop.show {
+  background-color: #0f191c;
+  opacity: 1;
+}

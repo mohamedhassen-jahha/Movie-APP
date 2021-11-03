@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./NavBar.css";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default class NavBar extends Component {
   showAdd = () => {
@@ -17,24 +18,27 @@ export default class NavBar extends Component {
         className="Navig"
       >
         <Container>
-          <Navbar.Brand href="#" className="Navlogo">
-            IMDb
-          </Navbar.Brand>
+          <Navbar.Brand className="Navlogo">IMDb</Navbar.Brand>
+
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#movies">Movies</Nav.Link>
-              <Nav.Link href="#">Learn more</Nav.Link>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
+              <Link className="nav-link" exact to="/movies">
+                Movies
+              </Link>
             </Nav>
             <Nav>
-              <Nav.Link
-                className="movieAdd"
+              <Link
+                className="nav-link movieAdd"
                 eventKey={2}
                 onClick={this.showAdd}
+                to={this.props.isAddMovieShowing ? "/" : "/addmovie"}
               >
                 ADD A MOVIE
-              </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

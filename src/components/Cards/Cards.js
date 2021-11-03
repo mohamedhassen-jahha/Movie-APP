@@ -1,6 +1,5 @@
 import React from "react";
 import CardComp from "./Card/CardComp";
-
 import "./Cards.css";
 
 function Cards({ Data, searchByName, searchByRate }) {
@@ -9,7 +8,7 @@ function Cards({ Data, searchByName, searchByRate }) {
       {Data.filter(
         (el) =>
           el.title.toLowerCase().includes(searchByName.toLowerCase()) &&
-          el.rating < searchByRate
+          el.rating <= searchByRate
       ).map((el) => (
         <CardComp
           key={el.id}
@@ -17,6 +16,7 @@ function Cards({ Data, searchByName, searchByRate }) {
           rating={el.rating}
           year={el.year}
           Title={el.title}
+          id={el.id}
         />
       ))}
     </div>
